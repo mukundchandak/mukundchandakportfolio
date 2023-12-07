@@ -383,7 +383,9 @@
        proxy ("mukundchandak") {
          return fetch(`https://your-proxy.com/github?user=${"mukundchandak"}`)
        }
-    }).then(r => r.text())
+    }).then(r => {
+            console.log("rrr", r, r.text())
+            return r.text()})
     </script>
 
 
