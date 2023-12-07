@@ -380,8 +380,8 @@
         GitHubCalendar(".calendar", "mukundchandak", { responsive: true });
 
         GitHubCalendar(".calendar", "mukundchandak", {
-       proxy ("mukundchandak") {
-         return fetch(`https://your-proxy.com/github?user=${"mukundchandak"}`)
+       proxy (mukundchandak) {
+         return fetch(`https://your-proxy.com/github?user=${mukundchandak}`)
        }
     }).then(r => {
             console.log("rrr", r, r.text())
