@@ -377,9 +377,9 @@
     </div>
 
     <script>
-        GitHubCalendar(".calendar", "mukundchandak", { responsive: true });
+        GitHubCalendar(".calendar", mukundchandak, { responsive: true });
 
-        GitHubCalendar(".calendar", "mukundchandak", {
+        GitHubCalendar(".calendar", mukundchandak, {
        proxy (mukundchandak) {
          return fetch(`https://your-proxy.com/github?user=${mukundchandak}`)
        }
